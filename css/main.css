@@ -1,0 +1,72 @@
+
+/* COMMON */
+:root
+{
+    color: #CCCCCC;
+    background: #222222;
+}
+
+/* CONTAINER TODOLIST */
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+#todoListContainer
+{
+    display: grid;
+    grid-template-columns: 100vw;
+}
+
+#todoListContainer > h1
+{
+    text-align: center;
+}
+
+/* FORM */
+#formAddTodo
+{
+    margin: 20px;
+    text-align: center;
+}
+
+#formAddTodo > input
+{
+    width: 45vw;
+}
+
+/* ERROR */
+.error
+{
+    display: none;
+    text-align: center;
+    color: #EE2222;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* TODOLIST */
+#todoList
+{
+    padding: 20px;
+}
+
+#todoList .todo
+{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+#todoList .todo [type=checkbox]:checked + label
+{
+    text-decoration: line-through;
+}
+
+#todoList .todo:not(:last-child)
+{
+    border-bottom: 1px solid #CCCCCC;
+}

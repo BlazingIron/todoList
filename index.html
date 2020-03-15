@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Todo list</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+
+    <body>
+
+        <section id="todoListContainer">
+
+            <h1>Ma todo list</h1>
+
+            <form name="formAddTodo" action="#confirm" id="formAddTodo" method="GET">
+                <input name ="todoTxt" type="text" placeholder="Chose à faire...">
+                <button type="submit">Ajouter</button>
+            </form>
+
+            <div class="error">Erreur de saisie.</div>
+
+            <div id="todoList"></div>
+            
+        </section>
+
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>
